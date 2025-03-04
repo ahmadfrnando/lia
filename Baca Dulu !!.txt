@@ -1,0 +1,28 @@
+SAYA PENDAMAN BOHALIMA
+
+toko obat
+
+Adapun cara instalasinya sbb :
+1.  Install web server : disini saya menggunakan Xampp v3.2.2, PHP Version 7.2.0
+2.  Jika instalasi sudah selesai, copykan folder indahnyaberbagi ke dalam folder C:\xampp\htdocs\
+3.  Jalankan Apache dan MySQL service 
+4.  Buka browser dan akses ke alamat : localhost/phpmyadmin/
+5.  Buat database baru dengan nama "db_puskesmas"
+6.  Pilih Import dan browse file "db_puskesmas.sql" yang berada dalam folder indahnyaberbagi  
+7.  Jika Sukses dan berhasil, maka toko obat profile dapat diakses dan dipergunakan.
+8.  Untuk mengujinya silahkan test akses front-end website ke alamat : localhost/indahnyaberbagi
+9.  Untuk halaman back-end (admin panel) bisa akses ke alamat : localhost/indahnyaberbagi/confpanel
+    User ID  : admin 
+    Password : admin
+10. Finish
+
+
+
+
+=======================================
+Saran dan Masukan :
+pendamankomputer@gmail.com
+instagram @pendaman_komputer
+whatsapp 081260174473
+=======================================
+
