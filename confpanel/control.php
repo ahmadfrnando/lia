@@ -12,6 +12,28 @@ $articles_services = "SELECT * FROM tbl_services ORDER BY id_services DESC LIMIT
 $tampil_services   = mysqli_query($link,$articles_services);
 $id_services	   = $start_services + 1;
 
+// Menampilkan Data Tabel Obat Masuk
+$perpage_obat_masuk  = 5;
+$page_obat_masuk     = isset($_GET['page']) ? (int)$_GET['page'] : 1;
+$start_obat_masuk    = ($page_obat_masuk > 1) ? ($page_obat_masuk * $perpage_obat_masuk) - $perpage_obat_masuk :0;     
+$result_obat_masuk   = mysqli_query ($link, "SELECT * FROM tbl_obatmasuk");
+$total_obat_masuk    = mysqli_num_rows($result_obat_masuk);
+$pages_obat_masuk    = ceil($total_obat_masuk/$perpage_obat_masuk);
+$articles_obat_masuk = "SELECT * FROM tbl_obatmasuk ORDER BY id DESC LIMIT $start_obat_masuk, $perpage_obat_masuk";
+$tampil_obat_masuk   = mysqli_query($link,$articles_obat_masuk);
+$id= $start_obat_masuk + 1;
+
+// Menampilkan Data Tabel Obat Keluar
+$perpage_obat_keluar  = 5;
+$page_obat_keluar     = isset($_GET['page']) ? (int)$_GET['page'] : 1;
+$start_obat_keluar    = ($page_obat_keluar > 1) ? ($page_obat_keluar * $perpage_obat_keluar) - $perpage_obat_keluar :0;     
+$result_obat_keluar   = mysqli_query ($link, "SELECT * FROM tbl_obatkeluar");
+$total_obat_keluar    = mysqli_num_rows($result_obat_keluar);
+$pages_obat_keluar    = ceil($total_obat_keluar/$perpage_obat_keluar);
+$articles_obat_keluar = "SELECT * FROM tbl_obatkeluar ORDER BY id DESC LIMIT $start_obat_keluar, $perpage_obat_keluar";
+$tampil_obat_keluar   = mysqli_query($link,$articles_obat_keluar);
+$id	   = $start_obat_keluar + 1;
+
 // Menampilkan Data Tabel Gallery
 $perpage_gallery  = 6;
 $page_gallery     = isset($_GET['page']) ? (int)$_GET['page'] : 1;

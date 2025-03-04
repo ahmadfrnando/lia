@@ -61,6 +61,16 @@
                       }else{
                            echo"<li  class=\"\"><a href=\"../../module/mod_services/services.php?tbl=pelayanandanproduk\">Tabel Pelayanan & Produk</a></li>";
                       }
+                      if ($module=="obatmasuk"){
+                           echo "<li class=\"active\"><a  href=\"../../module/mod_obat_masuk/services.php?tbl=obatmasuk\">Tabel Obat Masuk</a></li>";
+                      }else{
+                           echo"<li  class=\"\"><a href=\"../../module/mod_obat_masuk/services.php?tbl=obatmasuk\">Tabel Obat Masuk</a></li>";
+                      }
+                      if ($module=="obatkeluar"){
+                           echo "<li class=\"active\"><a  href=\"../../module/mod_obat_keluar/services.php?tbl=obatkeluar\">Tabel Obat Keluar</a></li>";
+                      }else{
+                           echo"<li  class=\"\"><a href=\"../../module/mod_obat_keluar/services.php?tbl=obatkeluar\">Tabel Obat Keluar</a></li>";
+                      }
 
                       if ($module=="galeri"){
                            echo "<li class=\"active\"><a  href=\"../../module/mod_gallery/gallery.php?tbl=galeri\">Tabel Galeri</a></li>";
