@@ -14,8 +14,11 @@ if (empty($_SESSION['username']) and empty($_SESSION['password'])) {
            <div class=\"row mt\">
             <div class=\"col-md-12\">
              <div class=\"content-panel\">
+               <div class=\"panel-body\">
+                 <a href=\"./laporan-barang-masuk.php\" class=\"btn btn-primary\" target=\"_blank\"><i class=\"fa fa-download\"></i> Download PDF</a>
+               </div>
               <table class=\"table table-striped table-advance table-hover\">
-                <h4>[ <i class=\"fa fa-info\"> ]</i> Tabel Pelayanan dan Produk</h4>
+                <h4>[ <i class=\"fa fa-info\"> ]</i> Tabel Obat Masuk</h4>
                 <hr>
                   <thead>
                   <tr>

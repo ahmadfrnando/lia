@@ -116,7 +116,7 @@ class databases
 	
 	public function get_show_obat_masuk()
 	{
-		$data_obat_masuk = "SELECT * FROM tbl_obatmasuk ORDER BY id_obat_masuk";
+		$data_obat_masuk = "SELECT * FROM tbl_obatmasuk ORDER BY id";
 		$hasil_obat_masuk = $this->mysqli->query($data_obat_masuk);
 		while ($row_obat_masuk = mysqli_fetch_array($hasil_obat_masuk)) {
 			$result_obat_masuk[] = $row_obat_masuk;
@@ -315,4 +315,5 @@ class databases
 		}
 		return $result_testimonial;
 	}
+	
 }
